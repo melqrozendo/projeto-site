@@ -4,11 +4,22 @@
 
 }
 body{
-    background-color: rgba(12, 1, 117, 0.966);
+    background-color:white;
+}
+h1{
+    font-family: Arial, Helvetica;
+    font-size: 32px;
+    color: black;
+}
+div.fundo1 img#capa{
+
+    width: 1000px;
+    height: 400px;
+
 }
 main{
     background-color: white;
-    width: 500px;
+    width: 1000px;
     margin: auto;
     padding: 20px;
     box-shadow: 3px 3px 5px rgba(7, 6, 6, 0.925);

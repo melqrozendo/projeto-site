@@ -1,29 +1,93 @@
-*{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+@charset "UTF-8";
+/**/
+/*definindo barra de menu do site*/
 
-}
 body{
-    background-color:white;
-}
-h1{
-    font-family: Arial, Helvetica;
-    font-size: 32px;
+    
+    font-family: Arial, Helvetica, sans-serif;
+
     color: black;
 }
-div.fundo1 img#capa{
+div#def-menu{
+    background-color: #000080;
+    margin-top: -20px;
+    margin-left: -20px;
+    height: 100px;
+}
+/*header#topo{
+    background-color: #2F4F4F;
+    background-color: #000080;
 
-    width: 1000px;
-    height: 400px;
+    margin-top: none;
+    margin-left: none;
+    /*width: 1000px;
+    height: 100px;
+}*/
+header#topo h1,h2{
+    font-family: Georgia,sans-serif;
+    font-size: 35px;
+    color: #FFFFF0;
+    padding-top: 20px;
+    padding-left: 60px;
+}
+header#topo h2{
+    font-family: Arial, Helvetica,sans-serif;
+    font-size: 14px;
+    color: #FFFFF0;
+    padding-top: 1px;
+    padding-left: 60px;
+}
+/*formatação do menu*/
+nav#menu{
+    display: block;
+}
+nav#menu ul{
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: 15px;
+    left: 700px;
 
 }
-main{
-    background-color: white;
-    width: 1000px;
+nav#menu li{
+    display: inline-block;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color: #FFFFF0;
+    /*background-color:#dddddd;*/
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 1s;
+}
+/*colocando efeitos visuais no [MENU]*/
+/*nav#menu li:hover{
+    background-color: #606060;
+}*/
+/*escondendo MENU PRINCIPAL da tela do site*/
+nav#menu h1{
+    display: none;
+}
+/*colocando efeito nos links de [MENU]*/
+nav#menu a{
+    color: #FFFFF0;
+    text-decoration: none;
+}
+nav#menu a:hover{
+    color: #ffffff;
+    text-decoration: underline;
+}
+/*definindo corpo do site*/
+/*formatar <div>*/
+div#interface{
+    background-color: #E6E6FA;
+    width: 1330px;
     margin: auto;
-    padding: 20px;
-    box-shadow: 3px 3px 5px rgba(7, 6, 6, 0.925);
+    margin-top: 0px;
+    padding: 10px 10px 10px;
+    
+    /*box-shadow: 3px 3px 5px rgba(7, 6, 6, 0.5);*/
 }
-img.lado{
-    float: right;
-}
+
+
+
+

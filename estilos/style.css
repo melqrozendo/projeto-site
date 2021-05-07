@@ -10,8 +10,8 @@ body{
 }
 div#def-menu{
     background-color: #000080;
-    margin-top: -20px;
-    margin-left: -20px;
+    margin-top: -30px;
+    margin-left: -30px;
     height: 100px;
 }
 /*header#topo{
@@ -23,19 +23,22 @@ div#def-menu{
     /*width: 1000px;
     height: 100px;
 }*/
-header#topo h1,h2{
-    font-family: Georgia,sans-serif;
+hgroup#logo h1{
+    font-family: Arial, Helvetica, sans-serif,sans-serif;
     font-size: 35px;
     color: #FFFFF0;
+
     padding-top: 20px;
-    padding-left: 60px;
+    padding-left: 70px;
+    margin-bottom: 0px;
 }
-header#topo h2{
+hgroup#logo h2{
     font-family: Arial, Helvetica,sans-serif;
     font-size: 14px;
     color: #FFFFF0;
     padding-top: 1px;
-    padding-left: 60px;
+    padding-left: 80px;
+    margin-top: 0px;
 }
 /*formatação do menu*/
 nav#menu{
@@ -80,14 +83,60 @@ nav#menu a:hover{
 /*formatar <div>*/
 div#interface{
     background-color: #E6E6FA;
-    width: 1330px;
+    
+    width: 1000px;
+    /*height: 600px;*/
     margin: auto;
     margin-top: 0px;
     padding: 10px 10px 10px;
     
-    /*box-shadow: 3px 3px 5px rgba(7, 6, 6, 0.5);*/
+    box-shadow: 3px 3px 5px rgba(7, 6, 6, 0.4);
+}
+div#interface img#img-home{
+    position: relative;
+    width: 990px;
+    height: 300px;
+}
+section.corpo h2#projeto{
+
+    
+
+}
+section.corpo h2#new{
+
+}
+article#noticia1{
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(7, 6, 6, 0.4);
+    text-align: justify;
+    width: 450px;
+    float: left;
+    padding: 10px;
+}
+article#noticia2{
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(7, 6, 6, 0.4);
+    text-align: justify;
+    width: 450px;
+    float: right;
+    padding: 10px;
 }
 
+    
+/*p#news{
+    box-shadow: 3px 3px 5px rgba(7, 6, 6, 0.4);
+    text-align: justify;
+    width: 500px;
+    
+}*/
+/*definindo rodape do site*/
+ footer#rodape{
+      clear: both;
+      border-top: 1px solid #606060;
+  }
+  footer#rodape p{
+      text-align: center;
+  }
 
 
 

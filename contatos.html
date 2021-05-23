@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site da EMPRESA</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/contatos.css">
 
 </head>
 <body>
@@ -36,10 +37,68 @@
     <img id="img-home" src="Imagens-sites/fundo do site1.PNG">
 
     <section class="corpo">
-        <h2>Endereço</h2>
-        <h2>Contatos</h2>
-        <h2>Emails</h2>
-        <h2>Fale conosco</h2>
+        <!--criando nucleo-->
+<!--tratamento de dados do formulario com PHP-->
+<form method="POST" id="fContato" action="mailto:melq.rozendo22@gmail.com" oninput="calculo_total();">
+    <fieldset id="usuario">
+        <legend>Identificação do Usuário</legend> 
+    
+        <p><label for="cNome"> Nome:<input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome Completo"/></label></p> 
+        <p><label for="cSenha"> Senha:<input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="8 dígitos"/></label> </p>
+        <p><label for="cEmail"> E-mail:<input type="email" name="tEmail" id="cEmail" size="20" maxlength="40"/></label></p>
+        <fieldset id="sexo"><legend >Sexo:</legend>
+            <input type="radio" name="tSexo" id="cMasc"><label for="cMasc">Masculino</label> </br> 
+            <input type="radio" name="tSexo" id="cFem"><label for="cFem">Feminino</label> 
+        </fieldset>
+        <p><label for="cNasc"> Data de Nascimento:<input type="date" name="tNasc" id="cNasc"/></label></p>
+    
+    </fieldset> 
+    
+    <fieldset id="endereco">
+        <legend>Endereço do Usuário</legend>
+        <p><label for="cRua">Logradouro:<input type="text" name="tRua" id="cRua" size="13" maxlength="80" placeholder="Rua,Av,..."/></label> </p> 
+        <p><label for="cNum"> Número:<input type="number" name="tNum" id="cNum" min="0" max="9999"/></label></p> 
+        <p><label for="cEst"> Estado:</label>
+            
+            <select name="tEst" id="cEst">
+            <optgroup label="Região Nordeste">
+                <option value="PE"selected>Pernambuco</option>
+                <option value="PB">Paraíba</option>
+                <option value="AL">Alagoas</option>
+            </optgroup>
+            <optgroup label="Região Sudeste">    
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="SC">Santa Catarina</option>
+            </optgroup>
+            </select>
+        </p> 
+        
+        <p><label for="cCid"> Cidade:</label>
+            <input type="text" name="tCid" id="cCid" size="20" maxlength="40" placeholder="Sua Cidade" list="cidades"/>
+        </p>
+        <datalist id="cidades">
+            <option value="Recife"></option>
+            <option value="Olinda"></option>
+            <option value="Camaragibe"></option>
+            <option value="Piedade"></option>
+        </datalist>
+    </fieldset>
+    
+    <fieldset id="mensagem">
+        <legend>Fale conosco</legend>
+        <p><label for="cMsg"> Mensagem:</label>
+            <textarea name="tMsg" id="cMsg" placeholder="Deixe aqui sua mensagem" cols="45" rows="5" > </textarea>
+        </p>
+    </fieldset>
+    
+ 
+    
+    <!--[BOTÃO ENVIAR]-->
+    <!--input type="submit" value="Enviar"/-->
+    <input type="image" name="tEnviar" src="Imagens-sites/botao-enviar.png"/>
+    </form>
+        
     </section>
 
 

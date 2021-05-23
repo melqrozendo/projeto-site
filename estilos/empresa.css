@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+section.corpo{
+    width: 950px;
+    height: 300px;
+    margin: 15px;
+    border: 5px solid #ffffff;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333;
+
+    padding: 5px;
+    padding-bottom: 10px;
+    text-align: justify;
+}
+div#pdf{
+    display: flex;
+    justify-content: center;
+}

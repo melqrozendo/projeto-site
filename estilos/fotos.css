@@ -1,0 +1,108 @@
+@charset "UTF-8";
+/**/
+
+ul#album-fotos{
+    
+    width: 900px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 60px;
+    margin-right: 60px;
+    padding: 10px;
+    overflow: hidden;
+    list-style: none;
+
+}
+/*formatando fotos para cada li*/
+ul#album-fotos li{
+    float: left;
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    border: 5px solid #ffffff;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    -webkit-transition: all 0.4s ease-in;
+
+}
+/*formatando album de fotos*/
+ul#album-fotos li span{
+    opacity: 0;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #000000;
+    background-color: rgba(0,0,0,0.4);
+    font-size: 9pt;
+    line-height: 0px;
+    padding: 5px;
+
+}
+/*formatando hover para dar zoom*/
+ul#album-fotos li:hover{
+    -webkit-transform: scale(1.2);
+}
+/*formatando hover (passando o mouse)*/
+ul#album-fotos li:hover span{
+    opacity: 1;
+}
+/*formatando cada foto e centralizando foto*/
+ul#album-fotos li#foto01{
+    background: url('../Imagens-sites/corteAA_frontal_01.JPG') no-repeat;
+    background-position: 50% 50%;
+    background-size: 875px 564px;
+    background-color: #ffffff;
+}
+ul#album-fotos li#foto02{
+    background: url('../Imagens-sites/corteBB_lateral_casademaq_01.JPG') no-repeat;
+    background-position: 50% 50%;
+    background-size: 856px 575px;
+    background-color: #ffffff;
+}
+ul#album-fotos li#foto03{
+    background: url('../Imagens-sites/corteBB_lateral_mesanino_01.JPG') no-repeat;
+    background-position: 50% 50%;
+    background-size: 867px 558px;
+    background-color: #ffffff;
+}
+ul#album-fotos li#foto04{
+    background: url('../Imagens-sites/corteBB_lateral_WC_01.JPG') no-repeat;
+    background-position: 50% 50%;
+    background-size: 656px 559px;
+    background-color: #ffffff;
+}
+ul#album-fotos li#foto05{
+    background: url('../Imagens-sites/planta_WC-f_01.JPG') no-repeat;
+    background-position: 50% 50%;
+    background-size: 863px 576px;
+    background-color: #ffffff;
+}
+ul#album-fotos li#foto06{
+    background: url('../Imagens-sites/planta_WC-m_01.JPG') no-repeat;
+    background-position: 50% 50%;
+    background-size: 849px 542px;
+    background-color: #ffffff;
+}
+/*formatando fotos para hover*/
+ul#album-fotos li#foto01:hover{
+    background-position: 5px 5px;
+    background-size: 250px 250px;
+}
+ul#album-fotos li#foto02:hover{
+    background-position: 10px 10px;
+    background-size: 250px 250px;
+}
+ul#album-fotos li#foto03:hover{
+    background-position: 10px 10px;
+    background-size: 250px 250px;
+}
+ul#album-fotos li#foto04:hover{
+    background-position: 10px 10px;
+    background-size: 250px 250px;
+}
+ul#album-fotos li#foto05:hover{
+    background-position: 10px 10px;
+    background-size: 250px 250px;
+}
+ul#album-fotos li#foto06:hover{
+    background-position: 10px 10px;
+    background-size: 250px 250px;
+}

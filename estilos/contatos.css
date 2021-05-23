@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+section.corpo{
+    width: 950px;
+    
+    margin: 15px;
+    border: 5px solid #ffffff;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+form{
+    width: 850px;
+    margin: auto;
+}
+input, textarea{
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 9pt;
+    background-color: rgba(255,255,255, 0.8);
+}
+input:hover, textarea:hover{
+    background-color: #dddddd;
+}
+legend{
+    color: #888888;
+    font-weight: bold;
+    font-size: 13pt;
+    font-family: sans-serif;
+}
+fieldset{
+    border-color: #cecece;
+    margin: 20px;
+}
+fieldset#sexo{
+    width: 150px;
+}
